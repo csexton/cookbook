@@ -1,0 +1,17 @@
+<h2><%=h @recipe.title %></h2>
+<hr />
+
+<p>
+<h3>Ingredients:</h3>
+  <%=ingredents_list(h @recipe.ingredients) %>
+</p>
+
+<hr class="space">
+<p>
+  <h3>Directions:</h3>
+  <%=h @recipe.directions %>
+</p>
+
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>

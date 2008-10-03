@@ -1,0 +1,23 @@
+<h2 class="alt">Listing recipes</h2>
+<p><%= will_paginate @posts %>  </p>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Ingredients</th>
+    <th>Directions</th>
+  </tr>
+
+<% for recipe in @recipes %>
+  <tr>
+    <td>
+      <%= link_to h(recipe.title), recipe %> <br/>
+      <!--%= link_to 'Edit', edit_recipe_path(recipe) %-->
+      <!--%= link_to 'Destroy', recipe, :confirm => 'Are you sure?', :method => :delete %-->
+    </td>
+    <td><%=ingredents_list(h recipe.ingredients) %></td>
+    <td><%=h recipe.directions %></td>
+  </tr>
+<% end %>
+</table>
+<p><%= will_paginate @posts %>  </p>
+
