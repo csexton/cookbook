@@ -6,4 +6,6 @@ Because food is only delicious when you eat it.
 
 h1. Thanks
  
-* Bort by Jim Neath and Fudge Studios (http://github.com/fudgestudios/bort/tree/master)
+* "Bort by Jim Neath and Fudge Studios":http://github.com/fudgestudios/bort/tree/master
+* "Blueprint CSS Framework":http://blueprintcss.googlecode.com
+

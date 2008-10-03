@@ -1,12 +1,13 @@
 development: &non_production_settings
   site_url: http://localhost:3000
-  site_name: Bort
-  admin_email: bort@bort.com
+  site_name: Tullos Sexton Cookbook
+  admin_email: csexton@gmail.com
   
 test:
   <<: *non_production_settings
   
 production:
-  site_url: http://www.example.com
-  site_name: Bort
-  admin_email: bort@bort.com
+  site_url: http://cookbook.fuzzymonk.com
+  site_name: Tullos Sexton Cookbook
+  admin_email: csexton@gmail.com
+
