@@ -32,7 +32,7 @@ production:
   
   # Mysql Settings
   adapter: mysql
-  database: cookbook
+  database: fuzzymonk_cookbook
   username: cookbook
   password: webecookin
   host: db.fuzzymonk.com

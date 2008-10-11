@@ -1,4 +1,3 @@
-<<<<<<< HEAD:config/deploy.rb
 #############################################################
 #	Application
 #############################################################
@@ -58,8 +57,6 @@ namespace :deploy do
 
 end
 
-=======
-set :stages, %w(staging production)
-set :default_stage, "production"
-require File.expand_path("#{File.dirname(__FILE__)}/../vendor/gems/capistrano-ext-1.2.1/lib/capistrano/ext/multistage")
->>>>>>> 0e4d2f79c4112a1dee1468a1d2c5203a973f22bb:config/deploy.rb
+#set :stages, %w(staging production)
+#set :default_stage, "production"
+#require File.expand_path("#{File.dirname(__FILE__)}/../vendor/gems/capistrano-ext-1.2.1/lib/capistrano/ext/multistage")
