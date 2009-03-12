@@ -3,9 +3,3 @@ h1. Flavor: The Tullos-Sexton Cookbook
 Just a silly home grown cookbook so that my wife can share recipies with her friends and family.
 
 Because food is only delicious when you eat it.
-
-h1. Thanks
- 
-* "Bort by Jim Neath and Fudge Studios":http://github.com/fudgestudios/bort/tree/master
-* "Blueprint CSS Framework":http://blueprintcss.googlecode.com
-
