@@ -49,11 +49,11 @@ namespace :deploy do
     task t, :roles => :app do ; end
   end
 
-  #desc "After symlinking current version, symlink to the production sqlite DB"
-  #task :after_update_code do 
-  #  # Link it from the shared folder. 
-  #  run "ln -s #{deploy_to}/#{shared_dir}/db/production.sqlite3 #{current_release}/db/production.sqlite3" 
-  #end 
+  desc "After symlinking current version, symlink to the production database.yml"
+  task :after_update_code do 
+    # Link it from the shared folder. 
+    run "ln -nfs #{deploy_to}/#{shared_dir}/config/database.yml #{release_path}/config/database.yml" 
+  end 
 
 end
 
