@@ -15,8 +15,8 @@ class RecipesController < ApplicationController
 
   def search
     query = params[:q]
-    #@recipes = Recipe.find(:all, :conditions => ["title LIKE ?", query])
-    @recipes = Recipe.find_by_sql("SELECT * FROM recipes WHERE MATCH (title, ingredients, directions) AGAINST ('#{query.gsub(/'/, "''")}');")
+    @recipes = Recipe.find(:all, :conditions => ["title LIKE ?", query])
+    #@recipes = Recipe.find_by_sql("SELECT * FROM recipes WHERE MATCH (title, ingredients, directions) AGAINST ('#{query.gsub(/'/, "''")}');")
 
 
     respond_to do |format|
