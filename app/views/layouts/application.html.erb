@@ -37,7 +37,12 @@
   </div>
 
     <div class="span-17 prepend-1 colborder">
-      <%= flash_messages %>
+      <% if flash[:notice] %>
+        <p class="notice"><%= flash[:notice] %></p><br />
+      <% end %>
+      <% if flash[:error] %>
+        <p class="error"><%= flash[:error] %></p><br />
+      <% end %>
       <%= yield :layout %>
     </div>
     <div class="span-5 last dont_print">
